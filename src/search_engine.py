@@ -1,8 +1,5 @@
-import numpy as np
-import pandas as pd
 import voyageai
-from typing import List, Dict, Tuple, Optional
-from collections import defaultdict
+from typing import List
 import logging
 import os 
 from pinecone import Pinecone
@@ -18,7 +15,7 @@ class SearchEngine:
         self.pc = Pinecone(api_key=pinecone_api_key)
         self.index = self.pc.Index("nhs-conditions")
     
-    def similarity_search(self, query_text: str, namespace: str, top_k: int = 25) -> List[dict]:
+    def similarity_search(self, query_text: str, namespace: str, top_k: int = 5) -> List[dict]:
         """Perform similarity search using Pinecone"""
         try:
             # Embed the query using the same model - matches your example exactly

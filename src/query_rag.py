@@ -1,8 +1,6 @@
 import os
-import time
 import argparse
 import logging
-import re
 from typing import Dict, List, Optional, Generator, Tuple
 from openai import OpenAI
 from config import Config, InfoSource

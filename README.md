@@ -1,14 +1,15 @@
 ---
-title: Streamlit Template Space
+title: NHS CHAT
 emoji: 🚀
 colorFrom: red
 colorTo: red
 sdk: docker
 app_port: 8501
 tags:
-  - streamlit
+- streamlit
 pinned: false
-short_description: Streamlit template space
+short_description: Chabot for querying NHS medical information.
+license: agpl-3.0
 ---
 
 # Welcome to Streamlit!

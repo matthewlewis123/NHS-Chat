@@ -14,7 +14,7 @@ except ImportError as e:
 
 # Get the correct path to the logo file
 current_dir = Path(__file__).parent
-LOGO_PATH = current_dir.parent / "nhs_logo.png"
+LOGO_PATH = current_dir / "nhs_logo.png"  
 
 # Check if logo exists, if not use a fallback
 if LOGO_PATH.exists():

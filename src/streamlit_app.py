@@ -397,7 +397,7 @@ st.caption("""
 **Data Usage and Licensing:**
 This tool utilizes information from NHS sources, which is made available under their respective open licensing terms. 
 This app is in no way affiliated with the NHS. It should be used for research demo purposes only and in no way should be used to substitute professional medical advise.
-- **NHS:** Content is used under the terms of the Open Government Licence. For full details, please refer to the [NHS Terms and Conditions](https://www.nhs.uk/our-policies/terms-and-conditions/).
+**NHS** Content is used under the terms of the Open Government Licence. For full details, please refer to the [NHS Terms and Conditions](https://www.nhs.uk/our-policies/terms-and-conditions/).
 
 Always consult the official sources for the most accurate, complete, and up-to-date information. 
 """)

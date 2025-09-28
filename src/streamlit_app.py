@@ -221,7 +221,7 @@ with st.sidebar:
 
     st.header("⚙️ Settings") 
 
-    llm_options = ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-2.5-pro"]
+    llm_options = ["gemini-2.5-flash-lite", "gemini-2.5-flash"]
     try:
         current_llm_index = llm_options.index(st.session_state.llm_model)
     except ValueError:

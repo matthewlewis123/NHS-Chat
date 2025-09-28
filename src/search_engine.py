@@ -21,7 +21,7 @@ class SearchEngine:
     def similarity_search(self, query_text: str, namespace: str, top_k: int = 25) -> List[dict]:
         """Perform similarity search using Pinecone"""
         try:
-            # Embed the query using the same model - matches your example exactly
+            # Embed the query using the same model 
             query_embedding = self.vo.contextualized_embed(
                 inputs=[[query_text]], 
                 model="voyage-context-3", 

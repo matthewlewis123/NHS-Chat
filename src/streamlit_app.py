@@ -84,7 +84,7 @@ def initialize_session_state():
     if "similarity_k" not in st.session_state:
         st.session_state.similarity_k = 5
     if "llm_model" not in st.session_state:
-        st.session_state.llm_model = "gemini-2.5-flash"
+        st.session_state.llm_model = "gemini-2.5-flash-lite"
 
 
 initialize_session_state()
@@ -227,7 +227,7 @@ with st.sidebar:
 
     st.header("⚙️ Settings") 
 
-    llm_options = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-pro"]
+    llm_options = ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-2.5-pro"]
     try:
         current_llm_index = llm_options.index(st.session_state.llm_model)
     except ValueError:
@@ -395,8 +395,9 @@ st.markdown('</div>', unsafe_allow_html=True)
 st.markdown("---")
 st.caption("""
 **Data Usage and Licensing:**
-This tool utilizes information from NHS sources, which is made available under their respective open licensing terms.
+This tool utilizes information from NHS sources, which is made available under their respective open licensing terms. 
+This app is in no way affiliated with the NHS. It should be used for research demo purposes only and in no way should be used to substitute professional medical advise.
 - **NHS:** Content is used under the terms of the Open Government Licence. For full details, please refer to the [NHS Terms and Conditions](https://www.nhs.uk/our-policies/terms-and-conditions/).
 
-Always consult the official sources for the most accurate, complete, and up-to-date information.
+Always consult the official sources for the most accurate, complete, and up-to-date information. 
 """)

@@ -3,6 +3,9 @@ from typing import Dict, List
 from pathlib import Path
 import os
 
+page_icon = "🩺"  # Use emoji instead of file path for better compatibility
+st.set_page_config(page_title="NHS Clinical Assistant", layout="wide", page_icon=page_icon)
+
 try:
     from query_rag import RAGSystem
 except ImportError as e:
@@ -14,20 +17,11 @@ except ImportError as e:
 
 # Get the correct path to the logo file
 current_dir = Path(__file__).parent
-LOGO_PATH = current_dir / "nhs_logo.png"  
-
-# Check if logo exists, if not use a fallback
-if LOGO_PATH.exists():
-    logo_path_str = str(LOGO_PATH)
-else:
-    # Fallback if logo doesn't exist
-    logo_path_str = None
+LOGO_PATH = current_dir / "nhs_logo.png"
+logo_path_str = str(LOGO_PATH) if LOGO_PATH.exists() else None
 
 LOGO_ALT = "NHS logo"
 
-# set a page icon (use emoji as fallback if logo file doesn't exist)
-page_icon = "🩺"  # Use emoji instead of file path for better compatibility
-st.set_page_config(page_title="NHS Clinical Assistant", layout="wide", page_icon=page_icon)
 
 # Initialize RAG System
 def get_rag_system():

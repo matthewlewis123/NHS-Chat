@@ -20,6 +20,8 @@ short_description: RAG-powered NHS health information chatbot
 
 A RAG-based chatbot for querying NHS health condition information. This application uses Retrieval-Augmented Generation to provide accurate, evidence-based responses from official NHS health documentation.
 
+Available at: https://huggingface.co/spaces/matthewlewis06/NHS-CHAT
+
 ## 🌟 Features
 
 - **NHS Health Information Search**: Search through NHS health conditions using semantic search powered by Voyage AI embeddings
